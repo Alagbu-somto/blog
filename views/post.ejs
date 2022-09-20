@@ -1,0 +1,9 @@
+<%-include("partials/header");-%>
+
+<h1 class="p-3"><%= postTitle %></h1>
+<p class="p-3"><%= postContent %></p>
+<form class="item" action="/delete" method="post">
+  <button class="del-post" type="submit" name="id" value="<%= ID %>">
+    Delete
+  </button>
+</form>
